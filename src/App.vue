@@ -47,7 +47,7 @@
                 <img class="nav__container__right__inner__img" src="./assets/logoIcons/phone.svg">
                 +7 (495) 555-55-55
               </div>
-              <div  class="nav__container__right__inner__address h5 d-flex align-center">
+              <div class="nav__container__right__inner__address h5 d-flex align-center">
                 <img class="nav__container__right__inner__img" src="./assets/logoIcons/geo.svg">
                 г. Москва, ул. Расплетина, 24
               </div>
@@ -70,6 +70,7 @@
   height: 100vh;
 }
 
+// navbar
 .nav {
 
   border-bottom: 1px solid #E1E1E1;
@@ -80,152 +81,59 @@
   a {
     color: #2c3e50;
   }
+
+  &__container {
+    height: 100%;
+
+    &__left {
+      width: 50.6%;
+    }
+
+    &__right {
+      &__inner {
+        border: 1px solid #E1E1E1;
+        height: 48px;
+
+        &__img {
+          margin-right: 8px;
+        }
+
+        &__form {
+          width: 276px;
+          color: #9F9F9F;
+          margin-left: 16px;
+        }
+
+        &__find {
+          color: white;
+          padding-left: 36px;
+          padding-right: 36px;
+          padding-top: 13px;
+          font-weight: bold;
+          padding-bottom: 14px;
+          background: #403432;
+        }
+      }
+    }
+  }
 }
 
-.nav__container {
-  height: 100%;
-}
+// footer
 
-.nav__container__left {
-  width: 50.6%;
-}
-
-.nav__container__right__inner {
-  border: 1px solid #E1E1E1;
-  height: 48px;
-}
-
-.nav__container__right__inner__form {
-  width: 276px;
-  color: #9F9F9F;
-  margin-left: 16px;
-}
-
-.nav__container__right__inner__find {
-  color: white;
-  padding-left: 36px;
-  padding-right: 36px;
-  padding-top: 13px;
-  font-weight: bold;
-  padding-bottom: 14px;
-  background: #403432;
-}
 
 .footer {
   background-color: #ECEAEA;
   height: 93px;
-  a{
+
+
+  &__phone__and__address {
+    width: 446px;
+  }
+
+  a {
     color: #555555;
   }
 }
-.footer__phone__and__address{
-  width: 446px;
-}
-.nav__container__right__inner__img{
-  margin-right: 8px;
-}
 
-.h1 {
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 36px;
-}
-
-.h2 {
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 24px;
-}
-
-.h3 {
-  font-size: 16px;
-  font-weight: bold;
-  line-height: 24px;
-}
-
-.h4 {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 21px;
-}
-
-.h5 {
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 21px;
-}
-
-.h6 {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 21px;
-}
-
-.w100 {
-  width: 100%;
-}
-
-.w50 {
-  width: 50%;
-}
-
-.w30 {
-  width: 30%;
-}
-
-.container {
-  position: relative;
-  display: block;
-  width: 1216px;
-  margin: auto;
-
-}
-
-.mt-4 {
-  margin-top: 46px;
-}
-
-.mb-2 {
-  margin-bottom: 39px;
-}
-
-.pb-2 {
-  padding-bottom: 24px;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.row {
-  flex-direction: row;
-}
-
-.column {
-  flex-direction: column;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-left {
-  text-align: left;
-}
-
-.align-center {
-  align-items: center;
-}
-
-.space-around {
-  justify-content: space-around;
-}
-
-.space-between {
-  justify-content: space-between;
-}
-.n-brd{
-  border: none!important;
-}
 
 </style>

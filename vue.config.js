@@ -4,7 +4,8 @@ module.exports = {
     loaderOptions: {
       scss: { // the change was made here (match the option name with file extension)
         prependData: `
-            @import "@/assets/scss/clearCss.scss";
+            @import "@/assets/scss/clear.scss";
+            @import "@/assets/scss/base.scss";
             `,
       },
     },
