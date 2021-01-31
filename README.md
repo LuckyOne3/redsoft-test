@@ -1,4 +1,6 @@
 # redsoft-test
+# tz 
+https://docs.google.com/document/d/1Vamqwl3MaXDFOMcEBTVsvoZhADblO-CcBVqVKs3Pij0/edit#
 
 ## Project setup
 ```
