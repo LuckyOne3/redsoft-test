@@ -32,7 +32,7 @@ export default new Vuex.Store({
           find = index
         }
       });
-      if(find){
+      if(find !== null){
         state.pictures[find].status = 'done'
       }
 
