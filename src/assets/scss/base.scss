@@ -1,3 +1,11 @@
+#app {
+  font-family: 'Merriweather', serif;
+
+  text-align: center;
+  color: #2c3e50;
+  background-color: #F6F3F3;
+  height: 100vh;
+}
 
 
 
@@ -125,7 +133,7 @@
     opacity: 0.8;
   }
   &_in_cart{
-    background-color: #5B3A32;
+    background-color: #5B3A32!important;
     padding-left: 10px!important;
     padding-right: 10px!important;
     cursor: default;

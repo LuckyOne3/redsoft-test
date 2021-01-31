@@ -67,7 +67,7 @@
               В корзине
 
             </div>
-            <div class="picture__body__buy button__buy h5 d-flex align-center" v-else-if="picture2 !== 'sending' "
+            <div class="picture__body__buy button__buy h5 d-flex align-center " v-else-if="picture2 !== 'sending' "
                  v-on:click="clicked(2)">
               Купить
             </div>
@@ -118,7 +118,7 @@
             Рембрандт
           </div>
           <div class="picture__body__buy__and__price d-flex row align-center ">
-            <div class="picture__body__prices d-flex column space-between  text-left">
+            <div class="picture__body__prices d-flex column space-between text-left">
               <div class="picture__body__old__price h6 ">
 
               </div>
@@ -197,9 +197,11 @@ export default Vue.extend({
   &__price {
     color: #343030;
 
-    &__bought {
+    &_bought {
       text-align: left;
       width: 100%;
+      margin-top: 12px;
+      padding-left: 12px;
     }
   }
 
@@ -218,7 +220,6 @@ export default Vue.extend({
     padding-right: 31px;
     padding-top: 13px;
     margin-right: 12px;
-    font-weight: bold;
     padding-bottom: 14px;
     background: #403432;
   }

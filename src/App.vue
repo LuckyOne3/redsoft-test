@@ -6,17 +6,17 @@
         <div class="nav__container container d-flex row align-center space-between">
           <div class="nav__container__left d-flex row align-center space-between ">
             <img src="./assets/logoIcons/logo-museum 2.svg">
-            <router-link class="h4" to="/">Каталог</router-link>
-            <router-link class="h4" to="/about">Доставка</router-link>
-            <router-link class="h4" to="/about">Оплата</router-link>
-            <router-link class="h4" to="/about">Контакты</router-link>
-            <router-link class="h4" to="/about">О галерее</router-link>
+            <router-link class="h5" to="/">Каталог</router-link>
+            <router-link class="h5" to="/about">Доставка</router-link>
+            <router-link class="h5" to="/about">Оплата</router-link>
+            <router-link class="h5" to="/about">Контакты</router-link>
+            <router-link class="h5" to="/about">О галерее</router-link>
           </div>
           <div class="nav__container__right d-flex row align-center space-between">
             <div class="nav__container__right__inner d-flex row align-center space-around">
-              <div class="nav__container__right__inner__form h6 text-left">
-                Поиск по названию картины
-              </div>
+
+                <input class="nav__container__right__inner__form h6 text-left n-brd" type="text" placeholder="Поиск по названию картины">
+
               <div class="nav__container__right__inner__find h4">
                 Найти
               </div>
@@ -35,11 +35,11 @@
         <div class="nav__container container d-flex row align-center space-between">
           <div class="nav__container__left d-flex row align-center space-between ">
             <img src="./assets/logoIcons/logo-museum-next.svg">
-            <router-link class="h4" to="/">Каталог</router-link>
-            <router-link class="h4" to="/about">Доставка</router-link>
-            <router-link class="h4" to="/about">Оплата</router-link>
-            <router-link class="h4" to="/about">Контакты</router-link>
-            <router-link class="h4" to="/about">О галерее</router-link>
+            <router-link class="h5" to="/">Каталог</router-link>
+            <router-link class="h5" to="/about">Доставка</router-link>
+            <router-link class="h5" to="/about">Оплата</router-link>
+            <router-link class="h5" to="/about">Контакты</router-link>
+            <router-link class="h5" to="/about">О галерее</router-link>
           </div>
           <div class="nav__container__right footer__phone__and__address d-flex row align-center space-between">
             <div class="nav__container__right__inner w100 n-brd d-flex row align-center space-between">
@@ -60,15 +60,6 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Merriweather', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  background-color: #F6F3F3;
-  height: 100vh;
-}
 
 // navbar
 .nav {
@@ -99,9 +90,20 @@
         }
 
         &__form {
-          width: 276px;
-          color: #9F9F9F;
-          margin-left: 16px;
+          width: 277px;
+          margin-left: 13px;
+          background-color: inherit;
+          font-family: 'Merriweather', serif;
+          &::placeholder {
+            text-align: left;
+            color: #9F9F9F;
+            opacity: 1; /* Firefox */
+            font-size: 14px;
+            font-weight: 200;
+            line-height: 21px;
+            font-family: 'Merriweather', serif;
+            letter-spacing: 0.2px;
+          }
         }
 
         &__find {
@@ -109,7 +111,7 @@
           padding-left: 36px;
           padding-right: 36px;
           padding-top: 13px;
-          font-weight: bold;
+          font-weight: 200!important;
           padding-bottom: 14px;
           background: #403432;
         }
