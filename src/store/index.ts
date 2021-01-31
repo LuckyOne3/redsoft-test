@@ -26,13 +26,15 @@ export default new Vuex.Store({
 
     },
     SET_CART_DONE: (state, payload: number) => {
-      let findd : number = 5;
+      let find : number | null = null;
       state.pictures.forEach((item: { id: number; status: string },index:number) => {
         if(item.id === payload){
-          findd = index
+          find = index
         }
       });
-      state.pictures[findd].status = 'done'
+      if(find){
+        state.pictures[find].status = 'done'
+      }
 
     },
   },
