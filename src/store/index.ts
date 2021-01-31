@@ -13,8 +13,8 @@ export default new Vuex.Store({
     pictures: [] as any,
   },
   mutations: {
-    SET_CART_SENDING: (state, payload: any) => {
-      let find = state.pictures.find((item: { id: any; status: string }) => {
+    SET_CART_SENDING: (state, payload: number) => {
+      let find = state.pictures.find((item: { id: number; status: string }) => {
         return item.id === payload;
       });
       if (!find) {
@@ -25,9 +25,9 @@ export default new Vuex.Store({
       }
 
     },
-    SET_CART_DONE: (state, payload: any) => {
+    SET_CART_DONE: (state, payload: number) => {
       let findd : number = 5;
-      state.pictures.forEach((item: { id: any; status: string },index:number) => {
+      state.pictures.forEach((item: { id: number; status: string },index:number) => {
         if(item.id === payload){
           findd = index
         }
@@ -37,7 +37,7 @@ export default new Vuex.Store({
     },
   },
   actions: {
-    ADD_PICTURES({ commit,state }:any, payload: any) {
+    ADD_PICTURES({ commit,state }:any, payload: number) {
 
       commit('SET_CART_SENDING', payload);
       const getExchangeRate = async () => {
