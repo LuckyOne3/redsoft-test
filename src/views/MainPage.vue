@@ -141,9 +141,6 @@ import Vue from 'vue';
 
 export default Vue.extend({
   name: 'mainPage',
-  props: {
-    msg: String,
-  },
   computed: {
     picture1() {
       return this.$store.getters.getTodoById(1);
