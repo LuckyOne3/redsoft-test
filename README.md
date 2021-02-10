@@ -1,4 +1,4 @@
-# redsoft-test
+# redsoft-test for position layout designer
 
 # demo
 http://preview.tw1.su/
